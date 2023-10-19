@@ -18,6 +18,7 @@ export default function Player() {
           if (!response.ok) {
             throw new Error("Erro na API");
           }
+          
           return response.json();
         })
         .then(data => {
